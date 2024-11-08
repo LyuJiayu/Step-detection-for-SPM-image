@@ -91,9 +91,9 @@ end
 % Calculate the weighted average
 [mean_StepDensity,error_S] = weighted_mean(ans_4sum,xysize.^2)
 % vertical step atom number
-[mean_V_atoms,error_V_a] = weighted_mean(ans_11vertical*0.1/0.325,xysize.^2)
+[mean_V_atoms,error_V_a] = weighted_mean(ans_11vertical*0.1/0.325,xysize.^2) % 0.325 nm for <1-210> step
 % horizontal step atom number
-[mean_H_atoms,error_H_a] = weighted_mean(ans_22horizontal*0.1/0.525,xysize.^2)
+[mean_H_atoms,error_H_a] = weighted_mean(ans_22horizontal*0.1/0.525,xysize.^2)  % 0.525 nm for <0001> step
 % total atom number
 [mean_T_a,error_T_a] = weighted_mean(ans_11vertical*0.1/0.325+ans_22horizontal*0.1/0.525,xysize.^2)
 %%
